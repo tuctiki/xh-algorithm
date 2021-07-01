@@ -1,5 +1,6 @@
 from unittest import TestCase
-import arrays_intersection
+from arrays import arrays_intersection
+import unittest
 
 
 class Test(TestCase):
@@ -17,3 +18,4 @@ class Test(TestCase):
         self.assertEqual([], arrays_intersection.for_sored([], []))
         self.assertEqual([1, 2, 3, 4], arrays_intersection.for_sored([1, 2, 3, 4, 4, 13], [1, 2, 3, 4, 9, 10]))
         self.assertEqual([4, 9], arrays_intersection.for_sored([4, 5, 9], [4, 4, 8, 9, 9]))
+
