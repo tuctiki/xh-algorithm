@@ -8,15 +8,12 @@ def basic(strs):
         result = ''
         i = 0
         for s in strs[0]:
-            j = 0
-            while True:
-                if j < len(strs) - 1:
-                    if i < len(strs[j]) and i < len(strs[j+1]) and strs[j][i] == strs[j + 1][i]:
-                        j += 1
-                    else:
-                        done = True
-                        break
+            j = 1
+            while j < len(strs):
+                if i < len(strs[j]) and strs[j][i] == s:
+                    j += 1
                 else:
+                    done = True
                     break
             if done:
                 break
