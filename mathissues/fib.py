@@ -5,7 +5,7 @@ def fib(subscript):
     y = 1
     if subscript < 2:
         return 1
-    i = 0
+    i = 1
     while i < subscript:
         y = y + x
         x = y - x
