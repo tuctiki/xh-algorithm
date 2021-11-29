@@ -20,5 +20,5 @@ def basic(nums, target):
                 k = k -1
             else:
                 return [nums[i], nums[j], nums[k]]
-        continue
+        i = i + 1
     return []
