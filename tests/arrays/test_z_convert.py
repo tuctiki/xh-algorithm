@@ -3,5 +3,5 @@ from arrays import z_convert
 
 
 class Test(TestCase):
-    def test_basic(self):
-        z_convert.basic("LEETCODEISHIRING", 4)
+    def test_opt(self):
+        z_convert.opt("LEETCODEISHIRING", 4)
